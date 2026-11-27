@@ -66,7 +66,6 @@ ScamShield/
 
 SMS Spam Collection Dataset from Kaggle.
 
-Add the exact Kaggle dataset URL here.
 
 ## ⚙️ Installation
 
