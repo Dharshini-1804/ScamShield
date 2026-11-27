@@ -4,7 +4,7 @@ import joblib
 from pathlib import Path
 
 # Load the trained model
-MODEL_PATH = Path(__file__).parent / "scamshield_model.pkl"
+MODEL_PATH = Path(__file__).parent / "models" / "scamshield_model.pkl"
 model = joblib.load(MODEL_PATH)
 
 def check_message(message):
