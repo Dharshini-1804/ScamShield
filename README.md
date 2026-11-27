@@ -6,6 +6,10 @@ ScamShield is a machine learning-based application that classifies SMS messages 
 
 It uses Natural Language Processing (NLP) and machine learning to identify suspicious SMS messages.
 
+## 📸 Application Demo
+
+![ScamShield Demo](Screenshot%202026-11-27%20153710.png)
+
 ## 🚀 Features
 
 - SMS spam detection
