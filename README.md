@@ -1,60 +1,100 @@
-
 # 🛡️ ScamShield
 
 ### AI-Powered SMS Spam Detection System
 
-ScamShield is a machine learning-based application that classifies SMS messages as Spam or Ham (Not Spam).
+ScamShield is a machine learning-based application that classifies SMS messages into two categories: **Spam** and **Ham (Not Spam)**.
 
-## Features
+It uses Natural Language Processing (NLP) and machine learning to identify suspicious SMS messages.
+
+## 🚀 Features
+
 - SMS spam detection
-- TF-IDF text vectorization
+- Text preprocessing using TF-IDF
 - Logistic Regression classification
-- Confidence score display
+- Prediction confidence display
 - Interactive Gradio web interface
+- Sample messages for testing
 
-## Technology Stack
+## 🛠️ Technology Stack
+
 - Python
 - Pandas and NumPy
 - Scikit-learn
-- TF-IDF
+- TF-IDF Vectorization
 - Logistic Regression
 - Gradio
 
-## Model Performance
-- Accuracy: 97.78%
-- Spam Precision: 94%
-- Spam Recall: 89%
-- Spam F1-score: 91%
+## 📊 Model Performance
 
-## Dataset
-SMS Spam Collection Dataset from Kaggle.
+The model was evaluated using a stratified 80:20 train-test split.
 
-## Project Structure
+| Metric | Score |
+|---|---:|
+| Accuracy | 97.78% |
+| Spam Precision | 94% |
+| Spam Recall | 89% |
+| Spam F1-score | 91% |
+
+**Confusion Matrix**
+
+```text
+[[895   8]
+ [ 15 116]]
+```
+
+## 📁 Project Structure
 
 ```text
 ScamShield/
 ├── data/
+│   └── spam.csv
 ├── models/
+│   └── scamshield_model.pkl
 ├── src/
 ├── app.py
 ├── train.py
 ├── requirements.txt
-└── README.md
+├── README.md
+└── LICENSE
 ```
 
-## How to Run
+## 📚 Dataset
 
-Install dependencies:
+SMS Spam Collection Dataset from Kaggle.
+
+Add the exact Kaggle dataset URL here.
+
+## ⚙️ Installation
+
+Install the required dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Launch the application:
+## ▶️ Run the Application
 
 ```bash
 python app.py
 ```
 
-## Disclaimer
-This project is an educational spam detection tool. Predictions may be incorrect and should not be treated as proof that a message is safe.
+## ⚠️ Limitations
+
+- The model was trained on an SMS spam dataset.
+- It may not detect every phishing or scam message.
+- Confidence scores are model estimates, not guarantees of correctness.
+- Predictions should not be treated as proof that a message is safe.
+
+## 🔮 Future Improvements
+
+- Expand the dataset with more diverse scam messages.
+- Test additional machine learning algorithms.
+- Improve detection of phishing-related messages.
+- Evaluate performance on unseen real-world messages.
+
+## 👩‍💻 Author
+
+Dharshini P J
+
+B.Tech Artificial Intelligence and Data Science
+
